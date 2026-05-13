@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(145deg, #f9f7fe 0%, #f3efff 100%);
+    color: #2d2a3a;
+    line-height: 1.6;
+    padding: 16px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    max-width: 520px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+/* ===== Акция ===== */
+.promo-banner {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    color: #fff;
+    padding: 14px 16px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.35);
+    animation: pulse 2s infinite;
+}
+
+.promo-bottom {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.promo-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.promo-text {
+    line-height: 1.4;
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 4px 20px rgba(139, 92, 246, 0.35); }
+    50% { box-shadow: 0 4px 35px rgba(139, 92, 246, 0.6); }
+}
+
+/* ===== Шапка профиля ===== */
+.hero {
+    text-align: center;
+    padding: 30px 16px 20px;
+    margin-bottom: 12px;
+}
+
+.avatar-wrapper {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa, #c4b5fd);
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.3);
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    background: #e5e0f5;
+}
+
+.hero h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e1b2e;
+    margin-bottom: 2px;
+}
+
+.age {
+    font-size: 15px;
+    color: #8b5cf6;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.role {
+    font-size: 17px;
+    font-weight: 600;
+    color: #3d3560;
+    background: linear-gradient(135deg, #ede9fe, #ddd6fe);
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #6b6280;
+    margin-bottom: 18px;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #8b5cf6;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: #9b95af;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ===== Секции ===== */
+.section {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px 18px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.section-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #3d3560;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-title i {
+    color: #8b5cf6;
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+}
+
+/* ===== Преимущества ===== */
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.benefit-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background: #faf9ff;
+    border-radius: 14px;
+    padding: 14px;
+    border: 1px solid #e8e3f8;
+}
+
+.benefit-item i {
+    color: #8b5cf6;
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    width: 22px;
+    text-align: center;
+}
+
+.benefit-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.benefit-item strong {
+    font-size: 14px;
+    color: #2d2a3a;
+}
+
+.benefit-item span {
+    font-size: 13px;
+    color: #6b6280;
+    line-height: 1.5;
+}
+
+/* ===== Навыки ===== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.skill-card {
+    background: linear-gradient(135deg, #f5f3ff, #ede9fe);
+    border-radius: 14px;
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #3d3560;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #e0d7fe;
+    transition: transform 0.2s;
+    word-break: break-word;
+}
+
+.skill-card:active {
+    transform: scale(0.96);
+}
+
+.skill-card i {
+    font-size: 20px;
+    color: #8b5cf6;
+}
+
+/* ===== Почему я ===== */
+.why-me-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.why-card {
+    background: #faf9ff;
+    border-radius: 14px;
+    padding: 14px 12px;
+    text-align: center;
+    border: 1px solid #e8e3f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.why-icon {
+    font-size: 28px;
+}
+
+.why-card strong {
+    font-size: 13px;
+    color: #2d2a3a;
+}
+
+.why-card span {
+    font-size: 11px;
+    color: #6b6280;
+    line-height: 1.4;
+}
+
+/* ===== Галерея кейсов ===== */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.gallery-item {
+    background: #faf9ff;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e8e3f8;
+    transition: transform 0.2s;
+}
+
+.gallery-item:active {
+    transform: scale(0.97);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+    background: #e5e0f5;
+}
+
+.gallery-item p {
+    font-size: 11px;
+    color: #4a4365;
+    padding: 10px 10px 12px;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* ===== Контакты ===== */
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-btn:active {
+    transform: scale(0.97);
+}
+
+.telegram {
+    background: linear-gradient(135deg, #2AABEE, #229ED9);
+    box-shadow: 0 4px 15px rgba(42, 171, 238, 0.3);
+}
+
+.email {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+.whatsapp {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* ===== Подвал ===== */
+.footer {
+    text-align: center;
+    padding: 20px 0 0;
+    font-size: 12px;
+    color: #9b95af;
+}
+
+/* ===== Анимация ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.6s ease both;
+}
+
+.section:nth-child(2) { animation-delay: 0.1s; }
+.section:nth-child(3) { animation-delay: 0.2s; }
+.section:nth-child(4) { animation-delay: 0.3s; }
+.section:nth-child(5) { animation-delay: 0.4s; }
+.section:nth-child(6) { animation-delay: 0.5s; }
+
+/* ===== Сертификат ===== */
+.certificate-wrapper {
+    text-align: center;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #faf9ff;
+    border: 1px solid #e8e3f8;
+    padding: 10px;
+}
+
+.certificate-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    background: #e5e0f5;
+}
+
+.certificate-caption {
+    font-size: 13px;
+    color: #6b6280;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* ===== Адаптация ===== */
+@media (min-width: 768px) {
+    body {
+        padding: 40px;
+    }
+
+    .container {
+        max-width: 650px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .why-me-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .contacts {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact-btn {
+        flex: 1;
+        min-width: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .role {
+        font-size: 19px;
+    }
+}
